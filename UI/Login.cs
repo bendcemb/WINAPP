@@ -20,6 +20,7 @@ namespace UI
             InitializeComponent();
             txtUser.Text = "admin";
             txtPassword.Text = "admin";
+            //a
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
