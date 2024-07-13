@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Project\\BPP\\Windows Form Applications\\UI\\",
+  "WorkspaceRootPath": "D:\\Project\\WINAPP\\UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|D:\\Project\\BPP\\Windows Form Applications\\UI\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|d:\\project\\winapp\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|d:\\project\\winapp\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|d:\\project\\winapp\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,12 +31,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Project\\WINAPP\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Project\\WINAPP\\UI\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T19:15:29.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Project\\WINAPP\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Project\\WINAPP\\UI\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T19:15:26.134Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Project\\BPP\\Windows Form Applications\\UI\\Form1.cs",
+              "DocumentMoniker": "D:\\Project\\WINAPP\\UI\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Project\\BPP\\Windows Form Applications\\UI\\Form1.cs",
+              "ToolTip": "D:\\Project\\WINAPP\\UI\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T18:12:25.144Z",
               "EditorCaption": ""

@@ -18,6 +18,8 @@ namespace UI
         public Login()
         {
             InitializeComponent();
+            txtUser.Text = "admin";
+            txtPassword.Text = "admin";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

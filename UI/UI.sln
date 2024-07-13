@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34031.279
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI.csproj", "{77C602FD-7462-4FBF-8B70-C52454F504F9}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{7863208F-E240-487B-8F90-2BA3823A2044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +15,6 @@ Global
 		{77C602FD-7462-4FBF-8B70-C52454F504F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77C602FD-7462-4FBF-8B70-C52454F504F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77C602FD-7462-4FBF-8B70-C52454F504F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7863208F-E240-487B-8F90-2BA3823A2044}.Debug|Any CPU.ActiveCfg = Debug
-		{7863208F-E240-487B-8F90-2BA3823A2044}.Release|Any CPU.ActiveCfg = Debug
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

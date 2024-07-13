@@ -48,6 +48,10 @@ namespace UI
             {
                 e.Cancel = true; // ยกเลิกการปิดฟอร์ม
             }
+            else
+            {
+                Environment.Exit(0);
+            }
         }
     }
 }

@@ -19,3 +19,24 @@ D:\Project\BPP\Windows Form Applications\UI\obj\Release\UI.csproj.CoreCompileInp
 D:\Project\BPP\Windows Form Applications\UI\obj\Release\UI.csproj.Up2Date
 D:\Project\BPP\Windows Form Applications\UI\obj\Release\UI.exe
 D:\Project\BPP\Windows Form Applications\UI\obj\Release\UI.pdb
+D:\Project\WINAPP\UI\bin\Release\UI.exe.config
+D:\Project\WINAPP\UI\bin\Release\UI.exe
+D:\Project\WINAPP\UI\bin\Release\UI.pdb
+D:\Project\WINAPP\UI\bin\Release\EntityFramework.dll
+D:\Project\WINAPP\UI\bin\Release\EntityFramework.SqlServer.dll
+D:\Project\WINAPP\UI\bin\Release\System.Data.SQLite.dll
+D:\Project\WINAPP\UI\bin\Release\System.Data.SQLite.EF6.dll
+D:\Project\WINAPP\UI\bin\Release\System.Data.SQLite.Linq.dll
+D:\Project\WINAPP\UI\bin\Release\EntityFramework.xml
+D:\Project\WINAPP\UI\bin\Release\EntityFramework.SqlServer.xml
+D:\Project\WINAPP\UI\bin\Release\System.Data.SQLite.xml
+D:\Project\WINAPP\UI\obj\Release\UI.csproj.AssemblyReference.cache
+D:\Project\WINAPP\UI\obj\Release\UI.Form1.resources
+D:\Project\WINAPP\UI\obj\Release\UI.Login.resources
+D:\Project\WINAPP\UI\obj\Release\UI.Properties.Resources.resources
+D:\Project\WINAPP\UI\obj\Release\UI.Registration.resources
+D:\Project\WINAPP\UI\obj\Release\UI.csproj.GenerateResource.cache
+D:\Project\WINAPP\UI\obj\Release\UI.csproj.CoreCompileInputs.cache
+D:\Project\WINAPP\UI\obj\Release\UI.csproj.Up2Date
+D:\Project\WINAPP\UI\obj\Release\UI.exe
+D:\Project\WINAPP\UI\obj\Release\UI.pdb

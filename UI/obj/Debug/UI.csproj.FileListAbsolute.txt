@@ -19,3 +19,24 @@ D:\Project\BPP\Windows Form Applications\UI\obj\Debug\UI.csproj.CoreCompileInput
 D:\Project\BPP\Windows Form Applications\UI\obj\Debug\UI.csproj.Up2Date
 D:\Project\BPP\Windows Form Applications\UI\obj\Debug\UI.exe
 D:\Project\BPP\Windows Form Applications\UI\obj\Debug\UI.pdb
+D:\Project\WINAPP\UI\bin\Debug\UI.exe.config
+D:\Project\WINAPP\UI\bin\Debug\UI.exe
+D:\Project\WINAPP\UI\bin\Debug\UI.pdb
+D:\Project\WINAPP\UI\bin\Debug\EntityFramework.dll
+D:\Project\WINAPP\UI\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\WINAPP\UI\bin\Debug\System.Data.SQLite.dll
+D:\Project\WINAPP\UI\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Project\WINAPP\UI\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Project\WINAPP\UI\bin\Debug\EntityFramework.xml
+D:\Project\WINAPP\UI\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\WINAPP\UI\bin\Debug\System.Data.SQLite.xml
+D:\Project\WINAPP\UI\obj\Debug\UI.csproj.AssemblyReference.cache
+D:\Project\WINAPP\UI\obj\Debug\UI.Form1.resources
+D:\Project\WINAPP\UI\obj\Debug\UI.Login.resources
+D:\Project\WINAPP\UI\obj\Debug\UI.Properties.Resources.resources
+D:\Project\WINAPP\UI\obj\Debug\UI.Registration.resources
+D:\Project\WINAPP\UI\obj\Debug\UI.csproj.GenerateResource.cache
+D:\Project\WINAPP\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+D:\Project\WINAPP\UI\obj\Debug\UI.csproj.CopyComplete
+D:\Project\WINAPP\UI\obj\Debug\UI.exe
+D:\Project\WINAPP\UI\obj\Debug\UI.pdb
