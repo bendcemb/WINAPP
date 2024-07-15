@@ -1,0 +1,13 @@
+F:\ProJect\Windows Form Applications\bBear_v1\bin\Debug\bBear_v1.exe.config
+F:\ProJect\Windows Form Applications\bBear_v1\bin\Debug\bBear_v1.exe
+F:\ProJect\Windows Form Applications\bBear_v1\bin\Debug\bBear_v1.pdb
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.csproj.AssemblyReference.cache
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.FormMain.resources
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.Properties.Resources.resources
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.csproj.GenerateResource.cache
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.csproj.CoreCompileInputs.cache
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.exe
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.pdb
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.UserControlFile.resources
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.UserControlRecord.resources
+F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.UserControlMenuRecord.resources
