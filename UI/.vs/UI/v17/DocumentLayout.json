@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|d:\\project\\winapp\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|D:\\Project\\WINAPP\\UI\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|d:\\project\\winapp\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|D:\\Project\\WINAPP\\UI\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77C602FD-7462-4FBF-8B70-C52454F504F9}|UI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "D:\\Project\\WINAPP\\UI\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAnAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-13T19:15:29.9Z",
               "EditorCaption": ""
@@ -50,8 +50,7 @@
               "ToolTip": "D:\\Project\\WINAPP\\UI\\Login.cs [Design]",
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T19:15:26.134Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-13T19:15:26.134Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAAADQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T18:12:25.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T18:12:25.144Z"
             }
           ]
         }

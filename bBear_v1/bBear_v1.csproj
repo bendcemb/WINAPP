@@ -60,12 +60,6 @@
     <Compile Include="UserControlFile.Designer.cs">
       <DependentUpon>UserControlFile.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlMenuRecord.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlMenuRecord.Designer.cs">
-      <DependentUpon>UserControlMenuRecord.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControlRecord.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -87,9 +81,6 @@
     </Compile>
     <EmbeddedResource Include="UserControlFile.resx">
       <DependentUpon>UserControlFile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlMenuRecord.resx">
-      <DependentUpon>UserControlMenuRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlRecord.resx">
       <DependentUpon>UserControlRecord.cs</DependentUpon>

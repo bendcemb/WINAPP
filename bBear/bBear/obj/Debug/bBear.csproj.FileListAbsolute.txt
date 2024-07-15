@@ -1,0 +1,12 @@
+D:\Project\WINAPP\bBear\bBear\bin\Debug\bBear.exe.config
+D:\Project\WINAPP\bBear\bBear\bin\Debug\bBear.exe
+D:\Project\WINAPP\bBear\bBear\bin\Debug\bBear.pdb
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.csproj.AssemblyReference.cache
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.Properties.Resources.resources
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.csproj.GenerateResource.cache
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.csproj.CoreCompileInputs.cache
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.exe
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.pdb
+D:\Project\WINAPP\bBear\bBear\bin\Debug\FontAwesome.Sharp.dll
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.csproj.Up2Date
+D:\Project\WINAPP\bBear\bBear\obj\Debug\bBear.FormMain.resources

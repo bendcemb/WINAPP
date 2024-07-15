@@ -11,3 +11,15 @@ F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.pdb
 F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.UserControlFile.resources
 F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.UserControlRecord.resources
 F:\ProJect\Windows Form Applications\bBear_v1\obj\Debug\bBear_v1.UserControlMenuRecord.resources
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.csproj.AssemblyReference.cache
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.FormMain.resources
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.Properties.Resources.resources
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.UserControlFile.resources
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.UserControlRecord.resources
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.csproj.GenerateResource.cache
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.csproj.CoreCompileInputs.cache
+D:\Project\WINAPP\bBear_v1\bin\Debug\bBear_v1.exe.config
+D:\Project\WINAPP\bBear_v1\bin\Debug\bBear_v1.exe
+D:\Project\WINAPP\bBear_v1\bin\Debug\bBear_v1.pdb
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.exe
+D:\Project\WINAPP\bBear_v1\obj\Debug\bBear_v1.pdb
