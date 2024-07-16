@@ -27,6 +27,18 @@ namespace bBear_v2
         public FormMain()
         {
             InitializeComponent();
+            ShowUserControl(ustrDashboard1);
+
+
+            //// สร้างและตั้งค่า RoundPanel
+            //RoundPanel roundPanel = new RoundPanel();
+            //roundPanel.Size = new Size(300, 200);
+            //roundPanel.Location = new Point(50, 50);
+            //roundPanel.BackColor = Color.LightBlue;
+            //roundPanel.CornerRadius = 30; // กำหนดรัศมีของขอบโค้ง
+
+            //// เพิ่ม RoundPanel ลงในฟอร์ม
+            //this.Controls.Add(roundPanel);
 
         }
 
@@ -39,6 +51,8 @@ namespace bBear_v2
             }
         }
 
+
+        //Title Controlbox
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -80,6 +94,37 @@ namespace bBear_v2
                 button.BackColor = Color.Black; // กลับเป็นสีปกติเมื่อเมาส์ออกจากปุ่ม
                 button.ForeColor = Color.Gainsboro;
             }
+        }
+
+
+
+        private void btnFiles_Click(object sender, EventArgs e)
+        {
+           
+            usctrFile1 = new usctrFile();
+            ShowUserControl(usctrFile1);
+
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            
+            ustrDashboard1 = new usctrDashboard();
+            ShowUserControl(ustrDashboard1);
+        }
+
+        private void ShowUserControl(UserControl userControl)
+        {
+            panelContainer.Controls.Clear();
+            userControl.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
+        private void btnRecords_Click(object sender, EventArgs e)
+        {
+            usctrRecord1 = new usctrRecordBy();
+            ShowUserControl(usctrRecord1);
         }
     }
 }

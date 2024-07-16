@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,8 +55,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="subusctrAddPeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="subusctrAddPeriod.Designer.cs">
+      <DependentUpon>subusctrAddPeriod.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransparentPanel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usctrDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrDashboard.Designer.cs">
+      <DependentUpon>usctrDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usctrFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrFile.Designer.cs">
+      <DependentUpon>usctrFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usctrRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usctrRecord.Designer.cs">
+      <DependentUpon>usctrRecord.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -70,6 +98,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="subusctrAddPeriod.resx">
+      <DependentUpon>subusctrAddPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrDashboard.resx">
+      <DependentUpon>usctrDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrFile.resx">
+      <DependentUpon>usctrFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usctrRecord.resx">
+      <DependentUpon>usctrRecord.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,6 +125,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minus-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-monitor32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notes32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frequency32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
