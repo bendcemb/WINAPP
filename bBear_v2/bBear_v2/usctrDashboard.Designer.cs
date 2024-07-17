@@ -37,7 +37,7 @@
             this.dtgvDashboard = new System.Windows.Forms.DataGridView();
             this.panelTop = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblCurrentMonthCash = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTotalOutstandingDebts = new System.Windows.Forms.Label();
@@ -101,7 +101,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lblCurrentMonthCash);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(475, 3);
             this.panel4.Margin = new System.Windows.Forms.Padding(10, 3, 5, 10);
@@ -109,15 +109,15 @@
             this.panel4.Size = new System.Drawing.Size(143, 87);
             this.panel4.TabIndex = 4;
             // 
-            // label6
+            // lblCurrentMonthCash
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label6.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label6.Location = new System.Drawing.Point(13, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 24);
-            this.label6.TabIndex = 5;
+            this.lblCurrentMonthCash.AutoSize = true;
+            this.lblCurrentMonthCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblCurrentMonthCash.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.lblCurrentMonthCash.Location = new System.Drawing.Point(13, 54);
+            this.lblCurrentMonthCash.Name = "lblCurrentMonthCash";
+            this.lblCurrentMonthCash.Size = new System.Drawing.Size(0, 24);
+            this.lblCurrentMonthCash.TabIndex = 5;
             // 
             // label7
             // 
@@ -126,9 +126,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(14, 21);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 16);
+            this.label7.Size = new System.Drawing.Size(121, 16);
             this.label7.TabIndex = 4;
-            this.label7.Text = "จำนวนห้อง";
+            this.label7.Text = "ชำระแล้วเดือนปัจจุบัน";
             // 
             // panel3
             // 
@@ -360,7 +360,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Button btnPrevios;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblCurrentMonthCash;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblTotalOutstandingDebts;
         private System.Windows.Forms.Label label5;

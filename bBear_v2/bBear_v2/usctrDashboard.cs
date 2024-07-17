@@ -13,9 +13,8 @@ namespace bBear_v2
 {
     public partial class usctrDashboard : UserControl
     {
-        // Replace with your actual connection string
-        //string conStr = @"Server=C259-003\SQLEXPRESS;Database=KBF;User Id=BNN\thinnarut;Password=mboit;";
-        string conStr = @"Server=C259-003\SQLEXPRESS;Database=KBF;Integrated Security=True;";
+        private string CompanyName;
+        private string conStr;
 
         private DataTable dataTable; // สำหรับเก็บข้อมูลทั้งหมด
         private int pageSize = 10; // จำนวนแถวต่อหน้า
@@ -25,34 +24,65 @@ namespace bBear_v2
 
         public usctrDashboard()
         {
+          
             InitializeComponent();
 
-            DataGridviewDashboard();
-            CountRoom();
-            CountOwner();
-            TotalOutstandingDebts();
+            // Replace with your actual connection string
+            //string conStr = @"Server=C259-003\SQLEXPRESS;Database=KBF;Integrated Security=True;";
+            CompanyName = "KBF";
+            this.conStr = $@"Server=C259-003\SQLEXPRESS;Database={CompanyName};Integrated Security=True;";
 
+            ShowData();
         }
 
-        private void DataGridviewDashboard()
+        private void ShowData()
         {
             try
             {
                 using (SqlConnection con = new SqlConnection(conStr))
                 {
                     con.Open();
-                    string query = "SELECT A.RO_CODE เลขที่ห้อง, A.RO_DEPT อาคาร, A.RO_OWNER รหัสเจ้าของ , B.PE_NAME  " +
-                        "FROM CMM_ROOM A " +
-                        "LEFT JOIN CMM_CUST B " +
-                        "ON A.RO_OWNER = B.PE_CODE";
+
+                    //แสดงตาราง
+                    string query = "SELECT A.RO_CODE เลขที่ห้อง, A.RO_DEPT อาคาร, A.RO_OWNER รหัสเจ้าของ , B.PE_NAME FROM CMM_ROOM A LEFT JOIN CMM_CUST B ON A.RO_OWNER = B.PE_CODE";
                     SqlDataAdapter da = new SqlDataAdapter(query, con);
                     dataTable = new DataTable();
                     da.Fill(dataTable);
-
-                    // คำนวณจำนวนหน้าทั้งหมด
-                    totalPage = (int)Math.Ceiling(dataTable.Rows.Count / (double)pageSize);
-
+                    totalPage = (int)Math.Ceiling(dataTable.Rows.Count / (double)pageSize); // คำนวณจำนวนหน้าทั้งหมด
                     DisplayPage(currentPage);
+
+                    //แสดงจำนวนห้อง
+                    string queryCountRoom = "SELECT COUNT(RO_CODE) FROM CMM_ROOM";
+                    SqlCommand cmdCountRoom = new SqlCommand(queryCountRoom, con);
+                    int roomCount = (int)cmdCountRoom.ExecuteScalar();
+                    lblCountRoom.Text = roomCount.ToString("N0");
+
+                    //แสดงจำนวนเจ้าของ
+                    string queryCountOwner = "SELECT COUNT(DISTINCT PE_NAME) FROM CMM_CUST";
+                    SqlCommand cmdCountOwner = new SqlCommand(queryCountOwner, con);
+                    int ownerCount = (int)cmdCountOwner.ExecuteScalar();
+                    lblOwner.Text = ownerCount.ToString("N0");
+
+                    //แสดงหนี้ค้างทั้งหมด
+                    string querytotalOutstandingDebts = @"SELECT SUM(A.AR_TOTAL) - (SELECT SUM(B.RC_AMOUNT) FROM [KBF].[dbo].[CMT_RCDL] B WHERE B.RC_ARNO IS NOT NULL) FROM  [KBF].[dbo].[CMT_ARHD] A;";
+                    SqlCommand cmdtotalOutstandingDebts = new SqlCommand(querytotalOutstandingDebts, con);
+                    object result = cmdtotalOutstandingDebts.ExecuteScalar();
+                    decimal totalOutstandingDebts = Convert.ToDecimal(result);
+                    lblTotalOutstandingDebts.Text = totalOutstandingDebts.ToString("N2");
+
+                    //แสดงชำระเดือนปัจจุบัน
+                    //string CurrentYear = DateTime.Now.Year.ToString();
+                    //string CurrentMonth = DateTime.Now.Month.ToString();
+                    int CurrentYear = 2021;
+                    int CurrentMonth = 7;
+                    string queryPaidCurrentMonth = @"SELECT SUM(RC_AMOUNT) AS TotalPaidCurrentMonth FROM [KBF].[dbo].[CMT_RCDL] WHERE RC_ARNO IS NOT NULL AND RC_ARYEAR = @CurrentYear AND RC_ARMONTH = @CurrentMonth";
+                    SqlCommand cmd2 = new SqlCommand(queryPaidCurrentMonth, con);
+                    cmd2.Parameters.AddWithValue("@CurrentYear", CurrentYear);
+                    cmd2.Parameters.AddWithValue("@CurrentMonth", CurrentMonth);
+                    object result2 = cmd2.ExecuteScalar();
+                    decimal PaidCurrentMonth = Convert.ToDecimal(result2);
+                    lblCurrentMonthCash.Text = PaidCurrentMonth.ToString("N2");
+
                 }
             }
             catch (Exception ex)
@@ -90,80 +120,6 @@ namespace bBear_v2
             {
                 currentPage++;
                 DisplayPage(currentPage);
-            }
-        }
-
-        private void CountRoom()
-        {
-            try
-            {
-                using (SqlConnection con = new SqlConnection(conStr))
-                {
-
-                    con.Open();
-                    string query = "SELECT COUNT(RO_CODE) FROM CMM_ROOM";
-                    SqlCommand cmd = new SqlCommand(query, con);
-
-                    int roomCount = (int)cmd.ExecuteScalar();
-
-                    lblCountRoom.Text = roomCount.ToString();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ระบบผิดพลาด ? : " + ex.Message, "Error");
-            }
-        }
-
-        private void CountOwner()
-        {
-            try
-            {
-                using (SqlConnection con = new SqlConnection(conStr))
-                {
-                    con.Open();
-                    string query = "SELECT COUNT(DISTINCT PE_NAME) FROM CMM_CUST";
-                    SqlCommand cmd = new SqlCommand(query, con);
-
-                    int ownerCount = (int)cmd.ExecuteScalar();
-
-                    lblOwner.Text = ownerCount.ToString();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ระบบผิดพลาด!! :" + ex.Message);
-            }
-        }
-
-        private void TotalOutstandingDebts()
-        {
-            try
-            {
-                using (SqlConnection con = new SqlConnection(conStr))
-                {
-                    con.Open();
-                    string query = "SELECT \r\n    SUM(A.AR_TOTAL) AS รวมแจ้งหนี้,\r\n    (SELECT SUM(B.RC_AMOUNT) FROM [KBF].[dbo].[CMT_RCDL] B WHERE B.RC_ARNO IS NOT NULL) AS รวมชำระใบแจ้งหนี้,\r\n\tSUM(A.AR_TOTAL) - (SELECT SUM(B.RC_AMOUNT) FROM [KBF].[dbo].[CMT_RCDL] B WHERE B.RC_ARNO IS NOT NULL) AS รวมค้างชำระ\r\nFROM  [KBF].[dbo].[CMT_ARHD] A;";
-
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    if (reader.Read())
-                    {
-                        decimal totalInvoices = reader.IsDBNull(0) ? 0 : reader.GetDecimal(0);
-                        decimal totalPayments = reader.IsDBNull(1) ? 0 : reader.GetDecimal(1);
-                        decimal totalOutstandingDebts = reader.IsDBNull(2) ? 0 : reader.GetDecimal(2);
-
-                        // Update the label text
-                        lblTotalOutstandingDebts.Text = totalOutstandingDebts.ToString("N2");
-                    }
-
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ระบบผิดพลาด!! :" + ex.Message);
             }
         }
 
