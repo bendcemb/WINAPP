@@ -13,7 +13,7 @@ namespace bBear_v2
 {
     public partial class usctrDashboard : UserControl
     {
-        private string CompanyName;
+        //private string CompanyName;
         private string conStr;
 
         private DataTable dataTable; // สำหรับเก็บข้อมูลทั้งหมด
@@ -24,13 +24,14 @@ namespace bBear_v2
 
         public usctrDashboard()
         {
-          
+
             InitializeComponent();
 
             // Replace with your actual connection string
             //string conStr = @"Server=C259-003\SQLEXPRESS;Database=KBF;Integrated Security=True;";
-            CompanyName = "KBF";
-            this.conStr = $@"Server=C259-003\SQLEXPRESS;Database={CompanyName};Integrated Security=True;";
+            string CompanyName = "TEST";
+            //this.conStr = $@"Server=C259-003\SQLEXPRESS;Database={CompanyName};Integrated Security=True;";
+            this.conStr = $@"Server=BENDCEMB-LT\SQLEXPRESS;Database={CompanyName};Integrated Security=True;";
 
             ShowData();
         }
@@ -64,30 +65,40 @@ namespace bBear_v2
                     lblOwner.Text = ownerCount.ToString("N0");
 
                     //แสดงหนี้ค้างทั้งหมด
-                    string querytotalOutstandingDebts = @"SELECT SUM(A.AR_TOTAL) - (SELECT SUM(B.RC_AMOUNT) FROM [KBF].[dbo].[CMT_RCDL] B WHERE B.RC_ARNO IS NOT NULL) FROM  [KBF].[dbo].[CMT_ARHD] A;";
+                    string querytotalOutstandingDebts = @"SELECT SUM(A.AR_TOTAL) - (SELECT SUM(B.RC_AMOUNT) FROM CMT_RCDL B WHERE B.RC_ARNO IS NOT NULL) FROM CMT_ARHD A;";
                     SqlCommand cmdtotalOutstandingDebts = new SqlCommand(querytotalOutstandingDebts, con);
                     object result = cmdtotalOutstandingDebts.ExecuteScalar();
-                    decimal totalOutstandingDebts = Convert.ToDecimal(result);
-                    lblTotalOutstandingDebts.Text = totalOutstandingDebts.ToString("N2");
+
+                    if (result == null)
+                    {
+                        lblTotalOutstandingDebts.Text = "ไม่พบข้อมูล";
+                    }
+                    else
+                    {
+                        decimal totalOutstandingDebts = Convert.ToDecimal(result);
+                        lblTotalOutstandingDebts.Text = totalOutstandingDebts.ToString("N2");
+                    }
 
                     //แสดงชำระเดือนปัจจุบัน
-                    //string CurrentYear = DateTime.Now.Year.ToString();
-                    //string CurrentMonth = DateTime.Now.Month.ToString();
-                    int CurrentYear = 2021;
-                    int CurrentMonth = 7;
-                    string queryPaidCurrentMonth = @"SELECT SUM(RC_AMOUNT) AS TotalPaidCurrentMonth FROM [KBF].[dbo].[CMT_RCDL] WHERE RC_ARNO IS NOT NULL AND RC_ARYEAR = @CurrentYear AND RC_ARMONTH = @CurrentMonth";
+                    string queryPaidCurrentMonth = @"SELECT SUM(RC_AMOUNT) AS TotalPaidCurrentMonth FROM CMT_RCDL WHERE RC_ARNO IS NOT NULL AND RC_ARYEAR = (SELECT MAX(RC_ARYEAR) FROM CMT_RCDL WHERE RC_ARNO IS NOT NULL) AND RC_ARMONTH = (SELECT MAX(RC_ARMONTH) FROM CMT_RCDL WHERE RC_ARNO IS NOT NULL AND RC_ARYEAR = (SELECT MAX(RC_ARYEAR) FROM CMT_RCDL WHERE RC_ARNO IS NOT NULL))";
                     SqlCommand cmd2 = new SqlCommand(queryPaidCurrentMonth, con);
-                    cmd2.Parameters.AddWithValue("@CurrentYear", CurrentYear);
-                    cmd2.Parameters.AddWithValue("@CurrentMonth", CurrentMonth);
                     object result2 = cmd2.ExecuteScalar();
-                    decimal PaidCurrentMonth = Convert.ToDecimal(result2);
-                    lblCurrentMonthCash.Text = PaidCurrentMonth.ToString("N2");
 
+                    if (result2 == DBNull.Value || result2 == null)
+                    {
+                        lblCurrentMonthCash.Text = "ไม่พบข้อมูล";
+                    }
+                    else
+                    {
+                        decimal PaidCurrentMonth = Convert.ToDecimal(result2);
+                        lblCurrentMonthCash.Text = PaidCurrentMonth.ToString("N2");
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ระบบผิดพลาด! : " + ex.Message);
+                //MessageBox.Show("ระบบผิดพลาด! : " + ex.Message);
+                Console.WriteLine(ex.Message);
             }
         }
 

@@ -22,3 +22,7 @@ F:\ProJect\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.usctrDashboard.resources
 F:\ProJect\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.usctrFile.resources
 F:\ProJect\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.subusctrAddPeriod.resources
 F:\ProJect\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.usctrRecordBy.resources
+D:\Project\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.subusctrAddPeriod.resources
+D:\Project\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.usctrDashboard.resources
+D:\Project\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.usctrFile.resources
+D:\Project\WINAPP\bBear_v2\bBear_v2\obj\Debug\bBear_v2.usctrRecordBy.resources
